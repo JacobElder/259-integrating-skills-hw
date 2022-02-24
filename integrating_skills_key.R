@@ -17,7 +17,7 @@ cities <- c("Charlotte", "Los Angeles", "Houston", "Indianapolis", "Jacksonville
 
 read_weather <- function (s) {
   ds <- read_csv(str_glue("us-weather-history/{s}.csv")) %>% 
-    mutate(station = s, date = ymd(date))
+    mutate(station = s, date = ymd(date) )
 }
 
 ds <- read_weather("KCLT")
