@@ -124,4 +124,3 @@ plot_month <- function(ds, m) {
   return(p)
 }
 map(unique(ds$month), ~ plot_month(ds, .x))
-
